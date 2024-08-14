@@ -1,4 +1,5 @@
 import React from 'react';
+import './Achievements.css'; // Make sure this path is correct
 
 const Achievements = ({ badges }) => {
   return (

@@ -1,10 +1,9 @@
-
 import React, { useState } from 'react';
 import QuestionList from './QuestionList';
 import QuestionDetail from './QuestionDetail';
 import ProgressBar from './ProgressBar';
 import Achievements from './Achievements';
-import './CoursePage.css'; // Updated CSS
+import './CoursePage.css';
 
 const questions = [
   { id: 1, title: 'Question 1', description: 'What is blockchain?' },
@@ -19,11 +18,11 @@ const CoursePage = () => {
 
   const handleSubmit = () => {
     if (progress < 100) {
-      setProgress(progress + 20); // Assuming each submission gives 20 points
+      setProgress(progress + 20); 
     }
 
     if (progress + 20 >= 100) {
-      setBadges([...badges, 'New Badge']); // Reward badge when progress reaches 100
+      setBadges([...badges, 'New Badge']);
     }
   };
 
@@ -31,13 +30,13 @@ const CoursePage = () => {
     <div className="course-page robotic-theme">
       <div className="question-section">
         <QuestionList questions={questions} onSelect={setSelectedQuestion} />
-      </div>
-      <div className="detail-section">
-        <QuestionDetail question={selectedQuestion} onSubmit={handleSubmit} />
         <div className="progress-container">
           <h3>Progress</h3>
           <ProgressBar progress={progress} />
         </div>
+      </div>
+      <div className="detail-section">
+        <QuestionDetail question={selectedQuestion} onSubmit={handleSubmit} />
       </div>
       <Achievements badges={badges} />
     </div>
