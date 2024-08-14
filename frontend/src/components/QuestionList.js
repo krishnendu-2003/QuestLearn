@@ -3,7 +3,7 @@ import React from 'react';
 const QuestionList = ({ questions, onSelect }) => {
   return (
     <div className="question-list">
-      <h3>Questions</h3>
+      <h3>Quest</h3>
       <ul>
         {questions.map((question) => (
           <li key={question.id} onClick={() => onSelect(question)}>
@@ -16,3 +16,6 @@ const QuestionList = ({ questions, onSelect }) => {
 };
 
 export default QuestionList;
+
+
+

@@ -1,8 +1,10 @@
+
 import React, { useState } from 'react';
 import QuestionList from './QuestionList';
 import QuestionDetail from './QuestionDetail';
 import ProgressBar from './ProgressBar';
 import Achievements from './Achievements';
+import './CoursePage.css'; // Updated CSS
 
 const questions = [
   { id: 1, title: 'Question 1', description: 'What is blockchain?' },
@@ -26,13 +28,16 @@ const CoursePage = () => {
   };
 
   return (
-    <div className="course-page">
+    <div className="course-page robotic-theme">
       <div className="question-section">
         <QuestionList questions={questions} onSelect={setSelectedQuestion} />
       </div>
       <div className="detail-section">
         <QuestionDetail question={selectedQuestion} onSubmit={handleSubmit} />
-        <ProgressBar progress={progress} />
+        <div className="progress-container">
+          <h3>Progress</h3>
+          <ProgressBar progress={progress} />
+        </div>
       </div>
       <Achievements badges={badges} />
     </div>
