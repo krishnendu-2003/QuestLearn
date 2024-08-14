@@ -1,0 +1,68 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.login-page {
+  margin-top: 100px;
+}
+
+.course-page {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.question-section, .detail-section, .achievements {
+  width: 30%;
+}
+
+.question-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.question-list li {
+  cursor: pointer;
+  padding: 8px;
+  background-color: #f0f0f0;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.question-list li:hover {
+  background-color: #ccc;
+}
+
+.question-detail {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  margin-top: 20px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s;
+}
+
+.achievements ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievements li {
+  padding: 5px;
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  border-radius: 5px;
+}
