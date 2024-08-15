@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { ethers } from 'ethers';
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
+// eslint-disable-next-line 
 import { getAnalytics } from "firebase/analytics";
+
 
 // Your Firebase configuration object
 const firebaseConfig = {
@@ -75,3 +77,6 @@ const LoginPage = ({ onLogin }) => {
 };
 
 export default LoginPage;
+
+
+
