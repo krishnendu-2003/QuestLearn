@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.17;
 
 contract RewardContract {
     mapping(address => uint256) public rewards;
@@ -29,3 +29,4 @@ contract RewardContract {
         return hasClaimedBadge[msg.sender];
     }
 }
+
