@@ -6,7 +6,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { getAnalytics } from "firebase/analytics";
 
 
-// Your Firebase configuration object
+// Firebase configuration
 const firebaseConfig = {
  apiKey: "AIzaSyCpk8b_hlXZkUC0BwNgCMhInSGG5MFa65o",
   authDomain: "questlearn-565dc.firebaseapp.com",

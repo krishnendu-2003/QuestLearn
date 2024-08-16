@@ -1,11 +1,28 @@
 import React from 'react';
 
-const QuestionDetail = ({ question, onSubmit }) => {
+const QuestionDetail = ({ question, selectedOption, onOptionChange, onSubmit }) => {
   return (
     <div className="question-detail">
-      <h3>{question.title}</h3>
+      <h2>{question.title}</h2>
       <p>{question.description}</p>
-      <button onClick={onSubmit}>Submit Answer</button>
+      <div className="options">
+        {question.options.map((option, index) => (
+          <label key={index}>
+            <input
+              type="radio"
+              value={option}
+              checked={selectedOption === option}
+              onChange={() => onOptionChange(option)}
+            />
+            {option}
+          </label>
+        ))}
+      </div>
+      {selectedOption && (
+        <button onClick={onSubmit} className="verify-btn">
+          Verify
+        </button>
+      )}
     </div>
   );
 };
