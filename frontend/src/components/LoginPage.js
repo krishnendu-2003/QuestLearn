@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { ethers } from 'ethers';
+import backgroundImage from '../assets/bg3.png';
+
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 // eslint-disable-next-line 
 import { getAnalytics } from "firebase/analytics";
 
-
 // Firebase configuration
 const firebaseConfig = {
- apiKey: "AIzaSyCpk8b_hlXZkUC0BwNgCMhInSGG5MFa65o",
+  apiKey: "AIzaSyCpk8b_hlXZkUC0BwNgCMhInSGG5MFa65o",
   authDomain: "questlearn-565dc.firebaseapp.com",
   projectId: "questlearn-565dc",
   storageBucket: "questlearn-565dc.appspot.com",
@@ -19,7 +20,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-// const analytics = getAnalytics(app);
 
 const LoginPage = ({ onLogin }) => {
   const [account, setAccount] = useState(null);
@@ -58,25 +58,44 @@ const LoginPage = ({ onLogin }) => {
   };
 
   return (
-    <div className="login-page">
-      <h2>Login</h2>
-      {account ? (
-        <p>Connected Account: {account}</p>
-      ) : (
-        <button onClick={connectWallet}>Connect Wallet & Login</button>
-      )}
-      <p>or</p>
-      {user ? (
-        <p>Welcome, {user.displayName}</p>
-      ) : (
-        <button onClick={signInWithGoogle}>Sign in with Google</button>
-      )}
-      {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+    <div 
+      className="login-page" 
+      style={{
+        backgroundImage: `url(${backgroundImage})`, 
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        height: '100vh',
+        width: '100vw',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: '#fff',
+      }}
+    >
+      <div style={{ 
+        textAlign: 'center', 
+        backgroundColor: 'rgba(0, 0, 0, 0.6)', 
+        padding: '20px', 
+        borderRadius: '8px' 
+      }}>
+        <h2>Login</h2>
+        {account ? (
+          <p>Connected Account: {account}</p>
+        ) : (
+          <button onClick={connectWallet}>Connect Wallet & Login</button>
+        )}
+        <p>or</p>
+        {user ? (
+          <p>Welcome, {user.displayName}</p>
+        ) : (
+          <button onClick={signInWithGoogle}>Sign in with Google</button>
+        )}
+        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+      </div>
     </div>
   );
 };
 
 export default LoginPage;
-
-
-

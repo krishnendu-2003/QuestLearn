@@ -1,15 +1,17 @@
 /* Global styles */
 html, body {
   font-family: 'Orbitron', sans-serif;
-  background-color: #0f0f0f; /* Dark background */
   color: #00d4ff; /* Neon cyan text */
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden; /* Prevent scrolling */
+  /* overflow: hidden;  */
 }
-.login-page {
-  margin-top: 100px;
+
+@media (max-width: 768px) {
+  .login-page {
+    background-size: 'contain';
+  }
 }
 
 
