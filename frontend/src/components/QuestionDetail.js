@@ -1,4 +1,5 @@
 import React from 'react';
+import './QuestionDetail.css'
 
 const QuestionDetail = ({ question, selectedOption, onOptionChange, onSubmit }) => {
   return (

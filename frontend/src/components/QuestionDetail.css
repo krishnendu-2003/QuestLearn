@@ -1,0 +1,48 @@
+.question-detail {
+    margin-bottom: 20px;
+    background-color: #2a2a2a;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #e0e0e0;
+  }
+  
+  .question-detail h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .question-detail p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .options label {
+    display: block; /* Ensures each option is on a new line */
+    font-size: 1em;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .options input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #4caf50; /* Set custom color for radio button */
+  }
+  
+  .verify-btn {
+    background-color: #1e88e5;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .verify-btn:hover {
+    background-color: #1565c0;
+  }
+  

@@ -72,13 +72,16 @@ const LoginPage = ({ onLogin }) => {
         justifyContent: 'center',
         alignItems: 'center',
         color: '#fff',
+       
       }}
     >
       <div style={{ 
         textAlign: 'center', 
-        backgroundColor: 'rgba(0, 0, 0, 0.6)', 
+        backgroundColor: 'rgba(0, 0, 0, 0.1)', 
         padding: '20px', 
-        borderRadius: '8px' 
+        borderRadius: '8px' ,
+         marginLeft: '125vh',
+         marginTop: '40vh'
       }}>
         <h2>Login</h2>
         {account ? (
