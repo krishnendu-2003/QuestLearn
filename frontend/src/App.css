@@ -17,7 +17,7 @@ html, body {
 
 .course-page {
   display: flex;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   background: linear-gradient(145deg, #0f0f0f, #1a1a1a); /* Gradient background */
   box-sizing: border-box; /* Include padding in height calculation */
 }
