@@ -7,7 +7,6 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 // eslint-disable-next-line 
 import { getAnalytics } from "firebase/analytics";
 
-// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCpk8b_hlXZkUC0BwNgCMhInSGG5MFa65o",
   authDomain: "questlearn-565dc.firebaseapp.com",

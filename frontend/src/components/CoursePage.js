@@ -59,7 +59,6 @@ const CoursePage = () => {
   const [signer, setSigner] = useState(null);
   const [rewardContract, setRewardContract] = useState(null);
 
-  // Initialize ethers provider and contract
   useEffect(() => {
     if (typeof window.ethereum !== 'undefined') {
       const init = async () => {
@@ -85,24 +84,22 @@ const CoursePage = () => {
       setProgress(newProgress);
 
       if (newProgress >= 100) {
-        // Award the badge and then call the smart contract
         setBadges([...badges, 'New Badge']);
         try {
           if (rewardContract) {
-            const tx = await rewardContract.claimReward(10); // Claim 10 EDU as reward
-            await tx.wait(); // Wait for the transaction to be mined
+            const tx = await rewardContract.claimReward(10); 
+            await tx.wait(); 
             console.log('Reward claimed successfully');
           }
         } catch (error) {
           console.error('Error claiming reward:', error);
         }
       } else {
-        // Move to the next question
         const nextQuestionIndex = questions.findIndex(q => q.id === selectedQuestion.id) + 1;
         if (nextQuestionIndex < questions.length) {
           setSelectedQuestion(questions[nextQuestionIndex]);
         }
-        setSelectedOption(''); // Reset the selected option
+        setSelectedOption(''); 
         setIsCorrect(false);
       }
     }

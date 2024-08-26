@@ -21,7 +21,7 @@ const RewardComponent = () => {
     }, []);
 
     const handleClaimReward = async () => {
-        await claimReward(10); // Claim 10 units of reward
+        await claimReward(10);
         const newReward = await getReward();
         setReward(newReward);
     };

@@ -22,7 +22,7 @@
   }
   
   .options label {
-    display: block; /* Ensures each option is on a new line */
+    display: block;
     font-size: 1em;
     margin-bottom: 10px;
     cursor: pointer;
@@ -30,7 +30,7 @@
   
   .options input[type="radio"] {
     margin-right: 10px;
-    accent-color: #4caf50; /* Set custom color for radio button */
+    accent-color: #4caf50; 
   }
   
   .verify-btn {
