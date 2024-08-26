@@ -61,7 +61,7 @@ QuestLearn is an innovative educational platform designed to make learning inter
 
 ## Smart Contract ABI
 
-Ensure that the ABI is correctly configured in your frontend application.
+Ensure that the ABI is correctly configured in your frontend application. Example ABI is available in src/abi/RewardContract.json.
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.
