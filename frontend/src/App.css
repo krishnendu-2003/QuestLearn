@@ -1,7 +1,6 @@
-/* Global styles */
 html, body {
   font-family: 'Orbitron', sans-serif;
-  color: #00d4ff; /* Neon cyan text */
+  color: #00d4ff; 
   margin: 0;
   padding: 0;
   height: 100%;
@@ -18,30 +17,30 @@ html, body {
 .course-page {
   display: flex;
   height: 100vh;
-  background: linear-gradient(145deg, #0f0f0f, #1a1a1a); /* Gradient background */
-  box-sizing: border-box; /* Include padding in height calculation */
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a); 
+  box-sizing: border-box; 
 }
 
 .question-section, .rewards-section {
-  width: 20%; /* Reduce the width to make space for the content section */
+  width: 20%;
   padding: 20px;
-  background-color: #121212; /* Dark sidebar */
+  background-color: #121212; 
   box-shadow: 2px 0 15px rgba(0, 0, 0, 0.5);
-  overflow-y: auto; /* Ensure scrolling within this section if content overflows */
-  box-sizing: border-box; /* Include padding in width calculation */
+  overflow-y: auto;
+  box-sizing: border-box; 
 }
 
 .detail-section {
   flex-grow: 1;
   padding: 40px;
-  background: linear-gradient(145deg, #1a1a1a, #0f0f0f); /* Gradient background */
-  color: #00ff9d; /* Neon green text */
-  box-sizing: border-box; /* Include padding in width calculation */
-  overflow-y: auto; /* Ensure scrolling within this section if content overflows */
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f); 
+  color: #00ff9d; 
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 h2, h3 {
-  color: #00ff9d; /* Neon green */
+  color: #00ff9d;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -102,13 +101,13 @@ button:hover {
   box-shadow: 0px 0px 15px rgba(0, 212, 255, 0.5);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1024px) {
   .question-section, .rewards-section {
-    width: 25%; /* Adjust width on smaller screens */
+    width: 25%; 
   }
 
   .detail-section {
-    padding: 20px; /* Reduce padding */
+    padding: 20px; 
   }
 }
