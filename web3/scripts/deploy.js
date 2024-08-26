@@ -11,7 +11,6 @@ async function main() {
   console.log(`RewardContract deployed to ${deployedContract.target}`);
 }
 
-// Catch errors and exit the process with failure code
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
