@@ -18,7 +18,6 @@ contract RewardContract {
         require(!hasClaimedBadge[msg.sender], "Badge already claimed");
         
         hasClaimedBadge[msg.sender] = true;
-        // Logic to assign badge (could be another contract or event)
     }
 
     function getReward() external view returns (uint256) {
