@@ -85,10 +85,3 @@ Complete modules may look like
 
 ![2nd image](https://github.com/krishnendu-2003/QuestLearn/blob/main/2.png)
 
-IFF any reward is won!!
-
-![3rd image](https://github.com/krishnendu-2003/QuestLearn/blob/main/3.png)
-
-Verifying the transaction on the EDU chain:
-
-![4th image](https://github.com/krishnendu-2003/QuestLearn/blob/main/4.png)
