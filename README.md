@@ -19,7 +19,7 @@ QuestLearn is an innovative educational platform designed to make learning inter
 
    ```bash
    git clone https://github.com/krishnendu-2003/QuestLearn
-   cd EduVote
+   cd frontend
    ```
 2. **Install Dependencies**
 
