@@ -43,7 +43,7 @@ QuestLearn is an innovative educational platform designed to make learning inter
 5. **Deploy Smart Contracts**
 
    ```bash
-   npx hardhat run scripts/deploy.js --network opencampus
+   npx hardhat run scripts/deploy.js --network opencampus 
    ```
    
 ### Usage
