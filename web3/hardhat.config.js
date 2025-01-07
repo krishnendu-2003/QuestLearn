@@ -1,30 +1,13 @@
-require("dotenv").config();
 require("@nomicfoundation/hardhat-toolbox");
-
+require("dotenv").config();
+/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.19",
-  paths: {
-    artifacts: "./artifacts",
-  },
+  solidity: "0.8.24",
   networks: {
-    opencampus: {
-      url: `https://rpc.open-campus-codex.gelato.digital/`,
-      accounts: [process.env.ACCOUNT_PRIVATE_KEY],
+    fuji: {
+      url: process.env.API_URL,
+      chainId: 43113,
+      accounts: [`0x`+ process.env.PRIVATE_KEY],
     },
-  },
-  etherscan: {
-    apiKey: {
-      opencampus: "your-etherscan-api-key",
-    },
-    customChains: [
-      {
-        network: "opencampus",
-        chainId: 656476,
-        urls: {
-          apiURL: "https://opencampus-codex.blockscout.com/api",
-          browserURL: "https://opencampus-codex.blockscout.com",
-        },
-      },
-    ],
   },
 };
